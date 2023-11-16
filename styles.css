@@ -1,0 +1,85 @@
+html,
+body {
+  background-color: #f4f4f4;
+}
+
+/* Footer styling */
+.footer {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer .text-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-icon {
+  font-size: 2rem; /* Make the icons larger */
+  margin: 0 10px; /* Add some spacing between the icons */
+  color: #343a40; /* Bootstrap dark grey, same as the table header */
+}
+
+.social-icon i {
+  vertical-align: middle;
+}
+
+/* Ensure that the main content is not too close to the footer */
+.main-content {
+  min-height: calc(
+    100vh - 145px
+  ); /* vh = viewport height in percentage 150 = height of header and footer*/
+}
+
+/* Table styling */
+#tracks-table {
+  background-color: white;
+}
+
+.property {
+  cursor: pointer; /* Make the cursor change to a pointer when hovering over the table headers */
+  user-select: none; /* Prevent the text from being highlighted */
+}
+
+/* Sort button styling */
+.sort-button {
+  background: none;
+  border: none;
+  font-size: larger; /* Make the arrow larger */
+}
+
+/* Style for inactive sort buttons */
+.sort-inactive {
+  color: grey;
+}
+
+/* Styles for active sort buttons */
+.sort-asc,
+.sort-desc {
+  color: white;
+}
+
+/* Make the form vertically stacked when the size of the screen gets too small */
+@media (max-width: 768px) {
+  /* Adjust form layout for smaller screens */
+  #track-form .form-row {
+    flex-direction: column;
+  }
+
+  #track-form .form-row > div {
+    margin-bottom: 10px;
+  }
+
+  /* Make the table headers and sort buttons stack */
+  thead th {
+    position: relative;
+  }
+
+  .sort-button {
+    position: absolute;
+    right: 5px;
+    /* Center the arrow vertically */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

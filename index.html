@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Music Catalog</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+  <!-- Required for the social media icons -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+
+  <header class="bg-white shadow-sm">
+    <nav class="navbar navbar-expand-sm navbar-light ">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Music Catalog" style="height: 30px;">
+      </a>
+      <!-- Only shows when the page is smaller -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4 main-content">
+    <h1 class="text-center mb-4">Music Catalog <button type="button" class="btn btn-info" onclick="fillTableWithSampleData()">Load Sample Data</button></h1>
+    <form id="track-form" class="mb-3">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" id="trackTitle" placeholder="Track Title" required>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="artistName" placeholder="Artist Name" required>
+        </div>
+        <div class="col">
+          <input type="number" class="form-control" id="rating" placeholder="Rating (0-10)" min="0" max="10" required>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Add Track</button>
+        </div>
+      </div>
+    </form>
+
+    <table id="tracks-table" class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <!-- &#x25BC is the unicode for the down arrow, &#x25B2 is the unicode for the up arrow -->
+            <th scope="col" class="property">Track Title <button class="sort-button sort-inactive" data-order="desc">&#x25BC;</button></th>
+            <th scope="col" class="property">Artist Name <button class="sort-button sort-inactive" data-order="desc">&#x25BC;</button></th>
+            <th scope="col" class="property">Rating <button class="sort-button sort-inactive" data-order="desc">&#x25BC;</button></th>
+            <th scope="col">Actions</th>            
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be added here using jQuery -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="footer bg-light">
+    <!-- text-center puts all elements in one line, px-3 is padding on the left and right, pb-2 is padding on the bottom -->
+    <div class="text-center px-3 pb-2"> 
+      <p>© 2023 Music Catalog</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/zuck" target="_blank" class="social-icon"><i class="fa fa-facebook-official" ></i></a>
+        <a href="https://www.github.com/chrismin13" target="_blank" class="social-icon"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+  </footer>  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
