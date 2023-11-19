@@ -4,11 +4,60 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
+.sort-inactive {
+  color: grey;
+}
 /* Set the font family and background color for the entire body */
 body{
 	font-family: Georgia, serif !important;
 	background-color: black !important;
 }
+.property {
+  cursor: pointer; /* Make the cursor change to a pointer when hovering over the table headers */
+  user-select: none; /* Prevent the text from being highlighted */
+}
+#track-form .form-row {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line if space is insufficient */
+}
+/* Apply border to the table */
+#tracks-table {
+  border: 1px solid #fff; /* White border against black background */
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Style the table header cells */
+#tracks-table thead th {
+  border: 1px solid #fff; /* White border for each header cell */
+  padding: 8px;
+  color: #fff; /* White text color */
+}
+
+/* Style the sort buttons in the header */
+#tracks-table .sort-button {
+  background-color: transparent; /* Transparent background */
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  color: #fff; /* White text color for buttons */
+}
+
+
+#track-form .form-row > div {
+  flex: 1  0 26%;; /* Distributes available space equally among the child divs */
+  margin-right: 10px; /* Adjust the right margin between form elements */
+  margin-bottom: 20px;  
+
+}
+/* Style the table body content */
+#tracks-table tbody {
+  color: #fff; /* Set text color to white */
+  background-color: black; /* Set background color to black */
+}
+This CSS will 
 
 /*========================navbar section================*/
 /* Style for the navbar */
@@ -170,43 +219,12 @@ img {
 .pinterest{
   background: #cb2027;
 }
-.sort-button {
-  background: none;
-  border: none;
-  font-size: larger; /* Make the arrow larger */
-}
-
-/* Style for inactive sort buttons */
-.sort-inactive {
-  color: grey;
-}
-
-/* Styles for active sort buttons */
-.sort-asc,
-.sort-desc {
-  color: white;
-}
-.sort-button {
-  position: absolute;
-  right: 5px;
-  /* Center the arrow vertically */
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 
 /* Styles for the footer section */
 body {
   min-height: 100vh;
 }
-.main-content {
-  min-height: calc(
-    100vh - 145px
-  ); /* vh = viewport height in percentage 150 = height of header and footer*/
-}
-#tracks-table {
-  background-color: white;
-}
+
 .footer {
   position: relative;
   width: 100%;
@@ -217,10 +235,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.property {
-  cursor: pointer; /* Make the cursor change to a pointer when hovering over the table headers */
-  user-select: none; /* Prevent the text from being highlighted */
 }
 
 /* Styles for social media icons and menu links in the footer */
@@ -267,6 +281,10 @@ body {
 .menu__link:hover {
   opacity: 1;
 }
+.white-bg {
+  background-color: white;
+}
+
 
 /* Additional styles for paragraph in the footer */
 .footer p {
@@ -279,7 +297,7 @@ body {
 /* Styles for the wave background */
 .wave {
   position: absolute;
-  top: -100px;
+  top: -50px;
   left: 0;
   width: 100%;
   height: 100px;
@@ -344,8 +362,37 @@ body {
     border-radius: 14px !important
   }
   /* Styling for the first area */
+/* Sort button styling */
+.sort-button {
+  background: none;
+  border: none;
+  font-size: larger; /* Make the arrow larger */
+}
+#tracks-table {
+  background-color: white;
+}
 
-  .area1{
+/* Style for inactive sort buttons */
+.sort-inactive {
+  color: grey;
+}
+
+/* Styles for active sort buttons */
+.sort-asc,
+.sort-desc {
+  color: white;
+}
+thead th {
+  position: relative;
+}
+.sort-button {
+  position: absolute;
+  right: 5px;
+  /* Center the arrow vertically */
+  top: 50%;
+  transform: translateY(-50%);
+}
+.area1{
     background-color: #504e81;
     border-top-left-radius: 12px !important;
     border-top-right-radius: 12px !important;
@@ -365,6 +412,9 @@ body {
     background-color:#dee2e6;
     border-bottom-left-radius: 14px !important;
     border-bottom-right-radius: 14px !important
+  }
+  thead th {
+    position: relative;
   }
   /* Styling for the name */
   .name{
