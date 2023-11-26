@@ -1,352 +1,383 @@
 <!DOCTYPE html>
 
-
 <html>
+
 <head>
-	    <!-- Set document metadata -->
+  <!-- Set document metadata -->
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nc Beats</title>
-	    <!-- Include Bootstrap CSS -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nc Beats</title>
+  <!-- Include Bootstrap CSS -->
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	    <!-- Include Bootstrap Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Include Bootstrap Icons CSS -->
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-         <!-- Include Custom Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Include Custom Stylesheet -->
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	    <!-- Preconnect to external resources -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   
-	    <!-- Include Google Fonts -->
+  <!-- Preconnect to external resources -->
 
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-	     <!--  icon  -->
+  <!-- Include Google Fonts -->
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link href="new/theme-purple.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="new/swiper-bundle.min.css">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!--  icon  -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link href="new/theme-purple.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="new/swiper-bundle.min.css" />
+  <link rel="icon" href="assets/img/favicon.ico" type="image/ico" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
-	
-	    <!-- Navigation Bar -->
-	<nav class="navbar navbar-expand-lg fixed-top" id="myNavbar">
-	  <div class="container-fluid">
-	               <!-- Brand Logo -->
-		<a class="navbar-brand text-white" href="index.html"><img src="images/logo.png" class="img-fluid" 
-			style="max-height: 14vh;"></a>
-			            <!-- Navbar Toggler Button -->
-	    <button class="navbar-toggler" style="background-color: #dee2e6;" type="button" 
-		data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"><i class="ri-align-justify"></i></span>
-	    </button>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="myNavbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand text-white" href="index.html"><img src="images/logo.png" class="img-fluid" style="max-height: 14vh" /></a>
+      <!-- Navbar Toggler Button -->
+      <button class="navbar-toggler" style="background-color: #dee2e6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"><i class="ri-align-justify"></i></span>
+      </button>
 
-            <!-- Navbar Links -->
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2">
+          <!-- Home Link -->
 
-		  <!-- Home Link -->
+          <li class="nav-item">
+            <a class="nav-link text-white me-3" href="index.html">Home</a>
+          </li>
+          <!-- About Link -->
 
-	        <li class="nav-item">
-	          <a class="nav-link active text-white me-3" 
-			  style="font-weight: 500; font-family: Georgia, serif !important;" aria-current="page" 
-			  href="index.html">Home</a>
-	        </li>
-		 <!-- About Link -->
+          <li class="nav-item">
+            <a class="nav-link active text-white me-3" href="about.html"><b>About</b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-	        <li class="nav-item">
-	          <a class="nav-link text-white me-3" 
-			  style="font-weight: 500; font-family: Georgia, serif !important;" 
-			  href="#">About</a>
-	        </li>
-	        
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
+  <!-- Main Content -->
+  <main style="margin-top: 110px" class="mb-5">
+    <!-- ====================================hero section======================= -->
 
-	    <!-- Main Content -->
-	<main style="margin-top: 110px !important;">
-		<!-- ====================================hero section======================= -->
+    <div class="container-fluid col-12 py-5">
+      <div class="row flex-lg-row-reverse align-items-center">
+        <!-- Hero Image -->
+        <div class="col-12 col-sm-12 col-lg-7 mb-4">
+          <img src="images/Jorge Camacho on Behance.gif" class="d-block mx-lg-auto img-fluid" alt="NC Beats Animation" width="700" height="700" loading="lazy" style="max-height: 650px; border-radius: 22px" />
+        </div>
+        <!-- Hero Text -->
+        <div class="col-lg-5">
+          <h1 class="display-3 lh-1 mb-4 text-white">Our Vision:</h1>
+          <p class="lead text-white" style="font-size: 16px; font-weight: 400">
+            At NC Beats, we believe in the power of music to connect souls,
+            bridge cultures, and ignite emotions. Our vision is to create a
+            haven where music enthusiasts can discover, rediscover, and
+            celebrate the diverse tapestry of sounds that make up our world.
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<div class="container-fluid col-xxl-12 col-12 py-5">
-		    <div class="row flex-lg-row-reverse align-items-center">
+    <!-- ====================================Team section======================= -->
+    <section class="mt-5">
+      <h4 class="mb-7 mb-lg-9 text-center display-6 text-white">
+        Meet the Creators
+      </h4>
 
-		  <!-- Hero Image -->
-		      <div class="col-12 col-sm-12 col-lg-7 mb-4">
-		        <img src="images/Jorge Camacho on Behance.gif" class="d-block mx-lg-auto img-fluid" 
-				alt="Bootstrap Themes" width="700" height="700" loading="lazy" 
-				style="max-height: 650px !important; border-radius: 22px;">
-		      </div>
-		 <!-- Hero Text -->
-		      <div class="col-lg-5">
-		        <h1 class="display-3 fw-bold lh-1 mb-4 text-white">Our Vision:</h1>
-		        <p class="lead text-white" style="font-size: 16px; font-weight: 400;">At NC Beats, we believe in the power of music to connect souls, bridge cultures, and ignite emotions. Our vision is to create a haven where music enthusiasts can discover, rediscover, and celebrate the diverse tapestry of sounds that make up our world.</p>
-		        
-		  <!-- Explore Button -->
-				<div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-		          <button type="button" class="btn btn-outline-secondary btn-md px-3 text-white" 
-				  style="border-color:#504e81;">Explore the life</button>
-		        </div>
-		      </div>
-		    </div>
-		</div>
+      <div class="container-fluid mt-5 mb-5 d-flex justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center">
+          <!-- NOUF -->
+          <div class="col-lg-6 col-12 mb-4 d-flex align-items-center justify-content-center">
+            <div class="card rounded">
+              <div class="d-block justify-content-center">
+                <!-- Nouf's Details -->
+                <div class="area1" style="background-color: #4dc247"></div>
+                <div class="area2 text-center px-3">
+                  <!-- Nouf's Image -->
 
-		<!-- ====================================Team section======================= -->
-	    <section class="mt-5">
-			<h4 class="mb-7 mb-lg-9 text-center display-6 text-white">Meet the Creators</h4>
+                  <div class="image mr-3">
+                    <img src="images/team1.jpeg" class="rounded-circle" width="100" height="100" style="height: 110px; width: 110px; object-fit: cover" />
+                    <!-- Nouf and her role -->
 
-			<div class="container-fluid mt-5 mb-5 d-flex justify-content-center">
-				<div class="row d-flex align-items-center justify-content-center">
-		 <!-- NOUF -->
-					<div class="col-lg-6 col-12 mb-4 d-flex align-items-center justify-content-center">
-					    <div class="card rounded">
-					        <div class=" d-block justify-content-center">
-		 <!-- Nouf's Details -->
-								<div class="area1" style="background-color: #4dc247 !important;"> </div>
-					            <div class="area2 text-center px-3">
-		 <!-- Nouf's Image -->
+                    <h3 class="name mt-3">Nouf</h3>
+                    <h6>The Visionary Curator</h6>
+                    <!-- Nouf's  Information -->
 
-									<div class="image mr-3"> <img src="images/team1.jpeg" class="rounded-circle" width="100" height="100" style="height: 110px; width: 110px; object-fit: cover;" />
-		<!-- Nouf and her role -->
+                    <p class="information mt-3 text-justify text-white">
+                      Nouf is the creative force behind NC Beats, blending her
+                      passion for user-centric experiences with a keen eye for
+                      diverse content. As a music enthusiast, Nouf understands
+                      the importance of personalization and has translated
+                      this understanding into a platform where you can curate
+                      your own digital realm.
+                    </p>
+                    <!-- Social Icons Section for Nouf -->
 
-										<h3 class=" name mt-3 ">Nouf</h3>
-					                    <h6>The Visionary Curator</h6>
-		 <!-- Nouf's  Information -->
+                    <div class="d-flex justify-content-center mt-5">
+                      <ul class="list-icons d-flex align-items-center justify-content-between">
+                        <!-- YouTube Icon with link -->
 
-					                    <p class="information mt-3 text-justify text-white">Nouf is the creative force behind NC Beats, blending her passion for user-centric experiences with a keen eye for diverse content. As a music enthusiast, Nouf understands the importance of personalization and has translated this understanding into a platform where you can curate your own digital realm.</p>
-        <!-- Social Icons Section for Nouf -->
-  
-										<div class="d-flex justify-content-center mt-5">
-					                        <ul class="list-icons d-flex align-items-center justify-content-between">
+                        <a target="_new" href="https://www.youtube.com/@kaloslikescomputers">
+                          <li class="youtube">
+                            <i class="ri-youtube-line"></i>
+                          </li>
+                        </a>
+
+                        <!-- Instagram Icon with link -->
+
+                        <a target="_new" href="https://instagram.com/n_onlyme?igshid=OGQ5ZDc2ODk2ZA%3D%3D&amp;utm_source=qr">
+                          <li class="instagram">
+                            <i class="ri-instagram-line"></i>
+                          </li>
+                        </a>
+
+                        <!-- Spotify Icon with link -->
+
+                        <a target="_new" href="https://open.spotify.com/user/31mr6hpgbmlvb7some3zh2aggdzq?si=IjFZS79BQyOl6EAa8Gh-Kw">
+                          <li class="whatsapp">
+                            <i class="ri-spotify-line"></i>
+                          </li>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHRIS -->
+
+          <div class="col-lg-6 col-12 mb-4 d-flex align-items-center justify-content-center">
+            <div class="card rounded">
+              <div class="d-block justify-content-center">
+                <div class="area1"></div>
+                <div class="area2 text-center px-3">
+                  <!-- Chris's image -->
+
+                  <div class="image mr-3">
+                    <img src="images/team2.jpeg" class="rounded-circle" width="100" height="100" style="height: 110px; width: 110px; object-fit: cover" />
+                    <h3 class="name mt-3">Chris</h3>
+                    <h6>The Technical Virtuoso</h6>
+                    <!-- Information about Chris -->
+
+                    <p class="information mt-3 text-justify text-white">
+                      Chris, the technical maestro, has woven his expertise
+                      into the fabric of NC Beats. With a background in web
+                      development, Chris ensures that the platform is visually
+                      appealing and functions seamlessly. He believes in
+                      technology's power to simplify, which is reflected in
+                      every feature of NC Beats..
+                    </p>
+                    <div class="d-flex justify-content-center mt-5">
+                      <!-- List of social media icons with links for Chris -->
+                      <ul class="list-icons d-flex align-items-center justify-content-between">
+                        <a target="_new" href="https://www.youtube.com/@chrismin13">
+                          <li class="youtube">
+                            <i class="ri-youtube-line"></i>
+                          </li>
+                        </a>
+                        <a target="_new" href="https://instagram.com/chrismin13?igshid=OGQ5ZDc2ODk2ZA==">
+                          <li class="instagram">
+                            <i class="ri-instagram-line"></i>
+                          </li>
+                        </a>
+                        <a target="_new" href="https://open.spotify.com/user/chrismin13?si=8As5Y9GARe6HibobJBv91w">
+                          <li class="whatsapp">
+                            <i class="ri-spotify-line"></i>
+                          </li>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================Why us section======================= -->
+
+    <section id="FAQ" class="position-relative">
+      <div class="container pt-8 pt-lg-8 z-1 position-relative overflow-hidden">
+        <div class="row">
+          <div class="col-md-12 mx-auto">
+            <h4 class="mb-7 mb-lg-9 text-center display-6 text-white">
+              Why NC Beats?
+            </h4>
+            <div class="row">
+              <div class="col-xl-7 col-md-10 col-lg-8 mx-auto position-relative">
+                <div class="swiper pb-9 swiperFaqs position-relative">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide py-7 py-lg-9 px-4 px-lg-5 bg-body border rounded-3" style="background-color: #dee2e6 !important">
+                      <h4 class="mb-3">Seamless Playlist Creation:</h4>
+                      <p class="mb-0">
+                        Navigate through NC Beats effortlessly. Add, arrange,
+                        and discover music with an interface designed for
+                        music lovers.
+                      </p>
+                    </div>
+                    <div class="swiper-slide py-7 py-lg-9 px-4 px-lg-5 bg-body border rounded-3" style="background-color: #dee2e6 !important">
+                      <h4 class="mb-3">Inclusive Melodies:</h4>
+                      <p class="mb-0">
+                        At NC Beats, we care about all languages, cultures,
+                        types, and kinds of music. Whether you're into global
+                        hits or hidden gems from local scenes, NC Beats is a
+                        space where every musical expression is valued and
+                        celebrated.
+                      </p>
+                    </div>
+                    <div class="swiper-slide py-7 py-lg-9 px-4 px-lg-5 bg-body border rounded-3" style="background-color: #dee2e6 !important">
+                      <h4 class="mb-3">Connect Through Music:</h4>
+                      <p class="mb-0">
+                        NC Beats is more than a website; it's a community.
+                        Join us on social media, share your favorite tracks,
+                        and connect with like-minded music lovers who
+                        appreciate the beauty of a well-played note.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination text-info"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================Promises section======================= -->
+
+    <div class="img-container" style="margin-bottom: 70px !important">
+      <img src="images/gif3.gif" />
+      <div class="overlay p-5 d-flex align-items-start justify-content-center">
+        <h1 class="display-6 fw-bold lh-1 mb-3 text-white">Our Promise:</h1>
+        <p class="lead text-white text-start" style="font-size: 15px; font-weight: 400">
+          At NC Beats, Nouf and Chris are dedicated to providing you with a
+          musical sanctuary that evolves with your tastes. NC Beats not just a
+          website; it's your stage, and we're here to help you orchestrate the
+          soundtrack of your life.
+        </p>
+      </div>
+    </div>
+
+    <!-- ====================================Footer section======================= -->
+
+    <footer class="footer">
+      <!-- Waves for decorative background -->
+
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <!-- Social Icons -->
+
+      <ul class="social-icon">
         <!-- YouTube Icon with link -->
 
-					                            <a target="_new" href="https://www.youtube.com/@kaloslikescomputers">
-													<li class="youtube"> <i class="ri-youtube-line"></i></li>
-												</a>
+        <li class="social-icon__item">
+          <a target="_new" class="social-icon__link" href="https://www.youtube.com/@chrismin13">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
 
-	  <!-- Instagram Icon with link -->
+        <!-- Custom Logo Icon with link -->
 
-					                            <a target="_new" href="https://instagram.com/n_onlyme?igshid=OGQ5ZDc2ODk2ZA%3D%3D&amp;utm_source=qr">
-													<li class="instagram"> <i class="ri-instagram-line"></i></li>
-												</a>
+        <li class="social-icon__item">
+          <a target="_new" style="margin-top: -12px !important" class="social-icon__link" href="#">
+            <img src="images/logo.png" class="img-fluid" style="max-height: 12vh" />
+          </a>
+        </li>
+        <!-- Instagram Icon with link -->
 
-       <!-- Spotify Icon with link -->
-										
-					                            <a target="_new" href="https://open.spotify.com/user/31mr6hpgbmlvb7some3zh2aggdzq?si=IjFZS79BQyOl6EAa8Gh-Kw">
-													<li class="whatsapp"> <i class="ri-spotify-line"></i></li>
-												</a>
-					                        </ul>
-					                    </div>
-					                </div>
-					                <div> </div>
-					            </div>
-					        </div>
-					    </div>
-						
-					</div>
-				<!-- CHRIS -->
+        <li class="social-icon__item">
+          <a target="_new" class="social-icon__link" href="https://instagram.com/n_onlyme?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=q">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <!-- Spotify Icon with link -->
 
-					<div class="col-lg-6 col-12 mb-4 d-flex align-items-center justify-content-center">
-					    <div class="card  rounded">
-					        <div class=" d-block justify-content-center">
-					            <div class="area1"> </div>
-					            <div class="area2 text-center px-3">
-				 <!-- Chris's image -->
+        <li class="social-icon__item ms-3">
+          <a target="_new" style="margin-top: -12px !important" class="social-icon__link" href="https://open.spotify.com/user/chrismin13?si=8As5Y9GARe6HibobJBv91w">
+            <i class="ri-spotify-line"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- Menu Links -->
 
-					                <div class="image mr-3"> <img src="images/team2.jpeg" class="rounded-circle" width="100" height="100" style="height: 110px; width: 110px; object-fit: cover;" />
-					                    <h3 class=" name mt-3 ">Chris</h3>
-					                    <h6>The Technical Virtuoso</h6>
-	             <!-- Information about Chris -->
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">Home</a>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      </ul>
+      <!-- Copyright and Trademarks Information -->
 
-					                    <p class="information mt-3 text-justify text-white">Chris, the technical maestro, has woven his expertise into the fabric of NC Beats. With a background in web development, Chris ensures that the platform is visually appealing and functions seamlessly. He believes in technology's power to simplify, which is reflected in every feature of NC Beats..</p>
-					                    <div class="d-flex justify-content-center mt-5">
-		        <!-- List of social media icons with links for Chris -->                       
-											<ul class="list-icons d-flex align-items-center justify-content-between">
-				     	
-					                            <a target="_new" href="https://www.youtube.com/@chrismin13"><li class="youtube"> <i class="ri-youtube-line"></i></li></a>
-					                            <a target="_new" href="https://instagram.com/chrismin13?igshid=OGQ5ZDc2ODk2ZA=="><li class="instagram"> <i class="ri-instagram-line"></i></li></a>
-					                            <a target="_new" href="https://open.spotify.com/user/chrismin13?si=8As5Y9GARe6HibobJBv91w"><li class="whatsapp"> <i class="ri-spotify-line"></i></li></a>
-					                        </ul>
-					                    </div>
-					                </div>
-					                <div> </div>
-					            </div>
-					        </div>
-					    </div>
-						
-					</div>
-				</div>
-			</div>
-		</section>
+      <p class="text-center col-lg-8 col-12">
+        &copy; All content on NC Beats is protected by copyright law. <br />
+        Unauthorized use may result in severe penalties. NC Beats, the logo,
+        and related names are trademarks. All rights reserved. Thank you for
+        using the NC Beats. Let the music play, and may your journey through
+        sound be as enchanting as the collaboration between Nouf and Christos!
+      </p>
+    </footer>
+  </main>
 
-		<!-- ====================================Why us section======================= -->		
-            
-        <section id="FAQ" class="position-relative">
-		    <div class="container pt-8 pt-lg-8 z-1 position-relative overflow-hidden">
-	          <div class="row">
-	              <div class="col-md-12 mx-auto">
-	                  <h4 class="mb-7 mb-lg-9 text-center display-6 text-white">Why NC Beats?</h4>
-	                  <div class="row">
-	                      <div class="col-xl-7 col-md-10 col-lg-8 mx-auto position-relative">
-	                          <div class="swiper pb-9 swiperFaqs position-relative">
-	                              <div class="swiper-wrapper">
-	                                  <div
-	                                      class="swiper-slide py-7 py-lg-9 px-4 px-lg-5 bg-body border rounded-3" style="background-color: #dee2e6 !important;">
-	                                      <h4 class="mb-3">Seamless Playlist Creation: </h4>
-	                                      <p class="mb-0">
-	                                          Navigate through NC Beats effortlessly. Add, arrange, and discover music with an interface designed for music lovers.
-	                                      </p>
-	                                  </div>
-	                                  <div
-	                                      class="swiper-slide py-7 py-lg-9 px-4 px-lg-5 bg-body border rounded-3" style="background-color: #dee2e6 !important;">
-	                                      <h4 class="mb-3">Inclusive Melodies: </h4>
-	                                      <p class="mb-0">
-	                                         At NC Beats, we care about all languages, cultures, types, and kinds of music. Whether you're into global hits or hidden gems from local scenes, NC Beats is a space where every musical expression is valued and celebrated.
-	                                      </p>
-	                                  </div>
-	                                  <div
-	                                      class="swiper-slide py-7 py-lg-9 px-4 px-lg-5 bg-body border rounded-3" style="background-color: #dee2e6 !important;">
-	                                      <h4 class="mb-3">Connect Through Music: </h4>
-	                                      <p class="mb-0">
-	                                          NC Beats is more than a website; it's a community. Join us on social media, share your favorite tracks, and connect with like-minded music lovers who appreciate the beauty of a well-played note.
-	                                      </p>
-	                                  </div>
-	                                  
-	                              </div>
-	                              <div class="swiper-pagination text-info"></div>
-	                          </div>
-	                      </div>
-	                  </div>
-	              </div>
-	          </div>
-		    </div>
-		</section>
+  <!-- JavaScript Libraries -->
 
-
-		<!-- ====================================Promises section======================= -->		
-
-        <div class="img-container" style="margin-bottom: 70px !important;">
-	        <img src="images/gif3.gif">
-	        <div class="overlay p-5 d-flex align-items-start justify-content-center">
-	        	<h1 class="display-6 fw-bold lh-1 mb-3 text-white">Our Promise:</h1>
-		        <p class="lead text-white text-start" style="font-size: 15px; font-weight: 400;">At NC Beats, Nouf and Chris are dedicated to providing you with a musical sanctuary that evolves with your tastes. NC Beats not just a website; it's your stage, and we're here to help you orchestrate the soundtrack of your life.</p>
-	        </div>
-	    </div>
-
-		<!-- ====================================Footer section======================= -->		
-
-		<footer class="footer">
-		    <!-- Waves for decorative background -->
-
-		    <div class="waves">
-		      <div class="wave" id="wave1"></div>
-		      <div class="wave" id="wave2"></div>
-		      <div class="wave" id="wave3"></div>
-		      <div class="wave" id="wave4"></div>
-		    </div>
-			    <!-- Social Icons -->
-
-		    <ul class="social-icon">
-		       <!-- YouTube Icon with link -->
-
-		      <li class="social-icon__item"><a  target="_new" class="social-icon__link" href="https://www.youtube.com/@chrismin13">
-		          <ion-icon name="logo-youtube"></ion-icon>
-		        </a></li>
-
-				<!-- Custom Logo Icon with link -->
-
-		        <li class="social-icon__item"><a target="_new"  style="margin-top: -12px !important;" class="social-icon__link" href="#">
-		          <img src="images/logo.png" class="img-fluid" style="max-height: 12vh;">
-		        </a></li>
-               <!-- Instagram Icon with link -->
-
-		      <li class="social-icon__item"><a target="_new"  class="social-icon__link" href="https://instagram.com/n_onlyme?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=q">
-		          <ion-icon name="logo-instagram"></ion-icon>
-		        </a></li>
-	          <!-- Spotify Icon with link -->
-
-		      <li class="social-icon__item ms-3"><a  target="_new" style="margin-top: -12px !important;" class="social-icon__link" href="https://open.spotify.com/user/chrismin13?si=8As5Y9GARe6HibobJBv91w">
-		          <i class="ri-spotify-line"></i>
-		        </a></li>
-		    </ul>
-			    <!-- Menu Links -->
-
-		    <ul class="menu">
-		      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-		      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-		    </ul>
-		    <!-- Copyright and Trademarks Information -->
-
-		    <p class="text-center col-lg-8 col-12">&copy; All content on NC Beats is protected by copyright law. <br> Unauthorized use may result in severe penalties. NC Beats, the logo, and related names are trademarks. All rights reserved. Thank you for using the NC Beats. Let the music play, and may your journey through sound be as enchanting as the collaboration between Nouf and Christos! </p>
-		</footer>
-
-	    
-		
-	</main>
-
-
-
-
-
-
-
-
-
-
-
-<!-- JavaScript Libraries -->
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<!-- SwiperSlider Script -->
-<script src="new/swiper-bundle.min.js"></script>
-      // Initialize SwiperSlider for FAQ section
+  <!-- SwiperSlider Script -->
+  <script src="new/swiper-bundle.min.js"></script>
+  // Initialize SwiperSlider for FAQ section
 
-   <script>
+  <script>
     var swiper = new Swiper(".swiperFaqs", {
-        effect: "cards",
-        grabCursor: true,
-        cardsEffect: {
-            slideShadows: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+      effect: "cards",
+      grabCursor: true,
+      cardsEffect: {
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
+  </script>
+  <!-- jQuery Script -->
 
-</script>
-<!-- jQuery Script -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    // Change navbar style on scroll
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script>
-	    // Change navbar style on scroll
-
-  $(document).ready(function() {
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 50) {
-        $('.navbar').addClass('scrolled');
-      } else {
-        $('.navbar').removeClass('scrolled');
-      }
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $(".navbar").addClass("scrolled");
+        } else {
+          $(".navbar").removeClass("scrolled");
+        }
+      });
     });
-  });
-</script>
-
+  </script>
 </body>
+
 </html>

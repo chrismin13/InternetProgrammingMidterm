@@ -1,95 +1,128 @@
-/* Reset some default styles for all elements */
-*{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
 .sort-inactive {
   color: grey;
 }
+
+/* Pad the header top and bottom by 20px*/
+header {
+  padding: 20px 0;
+}
+
+.light-header {
+  background-color: #F0F0F0;
+  color: black;
+}
+
+.light-header th {
+  color: black;
+}
+
 /* Set the font family and background color for the entire body */
-body{
-	font-family: Georgia, serif !important;
-	background-color: black !important;
+body {
+  font-family: Georgia, serif !important;
+  background-color: black !important;
 }
+
 .property {
-  cursor: pointer; /* Make the cursor change to a pointer when hovering over the table headers */
-  user-select: none; /* Prevent the text from being highlighted */
+  cursor: pointer;
+  /* Make the cursor change to a pointer when hovering over the table headers */
+  user-select: none;
+  /* Prevent the text from being highlighted */
 }
+
 #track-form .form-row {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap onto the next line if space is insufficient */
+  flex-wrap: wrap;
+  /* Allows items to wrap onto the next line if space is insufficient */
 }
+
+.sort-button {
+  background: none;
+  border: none;
+}
+
 /* Apply border to the table */
 #tracks-table {
-  border: 1px solid #fff; /* White border against black background */
-  border-collapse: collapse;
+  border: 1px solid white;
+  /* White outside border */
   width: 100%;
   margin-top: 20px;
 }
 
-/* Style the table header cells */
-#tracks-table thead th {
-  border: 1px solid #fff; /* White border for each header cell */
-  padding: 8px;
-  color: #fff; /* White text color */
-}
-
-/* Style the sort buttons in the header */
-#tracks-table .sort-button {
-  background-color: transparent; /* Transparent background */
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  font-size: inherit;
-  color: #fff; /* White text color for buttons */
-}
-
-
-#track-form .form-row > div {
-  flex: 1  0 26%;; /* Distributes available space equally among the child divs */
-  margin-right: 10px; /* Adjust the right margin between form elements */
-  margin-bottom: 20px;  
+#track-form .form-row>div {
+  flex: 1 0 26%;
+  /* Distributes available space equally among the child divs */
+  margin-right: 10px;
+  /* Adjust the right margin between form elements */
+  margin-bottom: 20px;
 
 }
+
 /* Style the table body content */
 #tracks-table tbody {
-  color: #fff; /* Set text color to white */
-  background-color: black; /* Set background color to black */
+  color: white;
+  /* Set text color to white */
+  background-color: black;
+  /* Set background color to black */
 }
-This CSS will 
 
 /*========================navbar section================*/
 /* Style for the navbar */
 .navbar {
-    background-color: #504e8161 !important; /* Set the default background color */
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
-  }
+  background-color: #504e8161;
+  /* Set the default background color */
+  transition: background-color 0.3s ease;
+  /* Add a smooth transition effect */
+}
 
-  /* Style for the navbar when scrolled */
-  .navbar.scrolled {
-    background-color: #504e81 !important; /* Change the background color when scrolled */
-  }
+/* Style for the navbar when scrolled */
+.navbar.scrolled {
+  background-color: #504e81;
+  /* Change the background color when scrolled */
+}
 
 /*==========================promises css===============*/
 /* Style for the image container */
 .img-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Ensure the gif covers the entire container */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* Ensure the gif covers the entire container */
 }
 
 /* Style for images inside the container */
 img {
-    width: 100%; 
-    height: 500px; 
-    object-fit: cover;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
+
 /* Style for the overlay on the image */
-.overlay{
+.overlay {
   position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  background-color: #ffffff3d;
+  border-radius: 22px;
+}
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 767px) {
+
+
+  .overlay {
+    position: absolute;
     top: 20%;
     left: 15%;
     width: 70%;
@@ -103,51 +136,28 @@ img {
     backdrop-filter: blur(4px);
     background-color: #ffffff3d;
     border-radius: 22px;
-}
-
-
-/* Media query for smaller screens */
-@media only screen and (max-width: 767px) {
-  
-
-.overlay {
-    position: absolute;
-   top: 20%;
-    left: 15%;
-    width: 70%;
-    height: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    backdrop-filter: blur(4px);
-    background-color: #ffffff3d;
-    border-radius: 22px;
     padding: 10px !important;
-}
+  }
 }
 
 /* Style for cards */
-.card{
-  width:400px;
+.card {
+  width: 400px;
   border: none;
   border-radius: 14px !important;
-
 }
-  
-  
+
+
 /* Styles for different sections of the card */
-  
-  .area1{
-    background-color: #504e81;
-    border-top-left-radius: 12px !important;
-    border-top-right-radius: 12px !important;
-    padding-top: 83px !important
-  }
-  
-.image{
+
+.area1 {
+  background-color: #504e81;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+  padding-top: 83px !important
+}
+
+.image {
   top: -62px;
   position: relative
 }
@@ -156,30 +166,25 @@ img {
   box-shadow: 5px 6px 6px 2px #e9ecef
 }
 
-.area2{
+.area2 {
   color: white;
-  background-color:black;
+  background-color: black;
   border-bottom-left-radius: 14px !important;
   border-bottom-right-radius: 14px !important;
 }
-.name{
-  font-size:30px;
-  font-weight:800 !important; 
-}
 
-.information{
-  color:#5d6177;
-  font-weight:500;
-  font-size:15px;
+.name {
+  font-size: 30px;
+  font-weight: 800 !important;
 }
 
 /* Styles for social media icons */
-.list-icons{
+.list-icons {
   display: inline-flex;
-  color:#C5CAE9;
+  color: #C5CAE9;
 }
 
-.list-icons li{
+.list-icons li {
   list-style: none;
   padding: 12px;
   border-radius: 10px;
@@ -187,37 +192,9 @@ img {
   margin-right: 10px;
 }
 
-.list-icons li i{
+.list-icons li i {
   font-size: 17px;
   color: #fff;
-}
-
-/* Responsive styles for social media icons */
-@media (max-width:700px){
-  .list-icons{
-    display: block;
-  }
-}
-
-/* Styles for different social media icons */
-.facebook{
-  background: #3b5998;
-}
-
-.instagram{
-  background: #3f729b;
-}
-
-.youtube{
-  background: #ff0000;
-}
-
-.whatsapp{
-  background: #4dc247;
-}
-
-.pinterest{
-  background: #cb2027;
 }
 
 /* Styles for the footer section */
@@ -238,6 +215,31 @@ body {
 }
 
 /* Styles for social media icons and menu links in the footer */
+
+/* About page */
+
+.facebook {
+  background: #3b5998;
+}
+
+.instagram {
+  background: #3f729b
+}
+
+.youtube {
+  background: #ff0000;
+}
+
+.whatsapp {
+  background: #4dc247
+}
+
+.pinterest {
+  background: #cb2027
+}
+
+/* Footer */
+
 .social-icon,
 .menu {
   position: relative;
@@ -263,7 +265,9 @@ body {
 
 /* Hover effect for social media icons */
 .social-icon__link:hover {
-  transform: translateY(-10px);
+  transform: translateY(-3px);
+  color: white;
+  /* can't color the nc beats icon, so might as well keep it consistent */
 }
 
 .menu__link {
@@ -281,6 +285,7 @@ body {
 .menu__link:hover {
   opacity: 1;
 }
+
 .white-bg {
   background-color: white;
 }
@@ -339,6 +344,7 @@ body {
   0% {
     background-position-x: 1000px;
   }
+
   100% {
     background-positon-x: 0px;
   }
@@ -349,6 +355,7 @@ body {
   0% {
     background-position-x: -1000px;
   }
+
   100% {
     background-positon-x: 0px;
   }
@@ -356,119 +363,75 @@ body {
 
 /* Media query for smaller screens */
 @media (max-width: 767px) {
-  .card{
-    width:350px;
+  .card {
+    width: 350px;
     border: none;
     border-radius: 14px !important
   }
-  /* Styling for the first area */
-/* Sort button styling */
-.sort-button {
-  background: none;
-  border: none;
-  font-size: larger; /* Make the arrow larger */
-}
-#tracks-table {
-  background-color: white;
-}
 
-/* Style for inactive sort buttons */
-.sort-inactive {
-  color: grey;
-}
-
-/* Styles for active sort buttons */
-.sort-asc,
-.sort-desc {
-  color: white;
-}
-thead th {
-  position: relative;
-}
-.sort-button {
-  position: absolute;
-  right: 5px;
-  /* Center the arrow vertically */
-  top: 50%;
-  transform: translateY(-50%);
-}
-.area1{
+  .area1 {
     background-color: #504e81;
     border-top-left-radius: 12px !important;
     border-top-right-radius: 12px !important;
     padding-top: 83px !important
   }
+
   /* Styling for the image container */
-  .image{
+  .image {
     top: -62px;
     position: relative;
   }
+
   /* Styling for the image inside the container */
-  .image img{
+  .image img {
     box-shadow: 5px 6px 6px 2px #e9ecef;
   }
-  /* Styling for the second area */
-  .area2{
-    background-color:#dee2e6;
-    border-bottom-left-radius: 14px !important;
-    border-bottom-right-radius: 14px !important
-  }
-  thead th {
-    position: relative;
-  }
+
   /* Styling for the name */
-  .name{
-    font-size:30px;
-    font-weight:800 !important; 
+  .name {
+    font-size: 30px;
+    font-weight: 800 !important;
   }
-  /* Styling for additional information */
-  .information{
-    color:#5d6177;
-    font-weight:500;
-    font-size:15px
-  }
+
   /* Styling for the social media icons list */
-  .list-icons{
+  .list-icons {
     display: inline-flex;
-    color:#C5CAE9
+    color: #C5CAE9
   }
+
   /* Styling for each social media icon item */
 
-  .list-icons li{
+  .list-icons li {
     list-style: none;
     padding: 12px;
     border-radius: 10px;
     width: 49px;
     margin-right: 10px
   }
+
   /* Styling for the social media icon */
-  .list-icons li i{
+  .list-icons li i {
     font-size: 17px;
     color: #fff;
   }
+
   /* Responsive styling for smaller screens */
-  @media (max-width:700px){
-    .list-icons{
+  @media (max-width:700px) {
+    .list-icons {
       display: block
     }
   }
-  /* Styling for social media icons with different backgrounds */
-  .facebook{
-    background: #3b5998
+}
+
+/* Make the form vertically stacked when the size of the screen gets too small */
+@media (max-width: 768px) {
+
+  /* Adjust form layout for smaller screens */
+  #track-form .form-row {
+    flex-direction: column;
   }
-  
-  .instagram{
-    background: #3f729b
+
+  #track-form .form-row>div {
+    margin-bottom: 10px;
   }
-  
-  .youtube{
-    background: #ff0000
-  }
-  
-  .whatsapp{
-    background: #4dc247
-  }
-  
-  .pinterest{
-    background: #cb2027}
 }

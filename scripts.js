@@ -1,4 +1,13 @@
 $(document).ready(function () {
+  // Change navbar style on scroll
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $(".navbar").addClass("scrolled");
+    } else {
+      $(".navbar").removeClass("scrolled");
+    }
+  });
+
   // Function to add a track to the table
   $("#track-form").submit(function (e) {
     e.preventDefault();
