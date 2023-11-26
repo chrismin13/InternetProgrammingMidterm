@@ -1,5 +1,3 @@
 # InternetProgrammingMidterm
 
-Please refer to the text submission on Blackboard.
-
-music.chrismin13.com
+[View the website here! music.chrismin13.com](https://music.chrismin13.com)
