@@ -80,6 +80,7 @@ $(document).ready(function () {
       table.children("tbody").append(row);
     });
   });
+
 });
 
 function createNewRow(trackTitle, artistName, rating) {
