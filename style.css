@@ -116,30 +116,6 @@ img {
   border-radius: 22px;
 }
 
-
-/* Media query for smaller screens */
-@media only screen and (max-width: 767px) {
-
-
-  .overlay {
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    width: 70%;
-    height: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    backdrop-filter: blur(4px);
-    background-color: #ffffff3d;
-    border-radius: 22px;
-    padding: 10px !important;
-  }
-}
-
 /* Style for cards */
 .card {
   width: 400px;
@@ -218,24 +194,16 @@ body {
 
 /* About page */
 
-.facebook {
-  background: #3b5998;
-}
-
 .instagram {
   background: #3f729b
 }
 
 .youtube {
-  background: #ff0000;
+  background: #ff0000; 
 }
 
-.whatsapp {
+.spotify {
   background: #4dc247
-}
-
-.pinterest {
-  background: #cb2027
 }
 
 /* Footer */
@@ -420,6 +388,24 @@ body {
     .list-icons {
       display: block
     }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    background-color: #ffffff3d;
+    border-radius: 22px;
+    padding: 10px !important;
   }
 }
 
